@@ -2,17 +2,19 @@
 
 **This project visualizes how neural networks learn word embeddings.**
 
-A Neural Network implemented in PyTorch and consisting of an embedding and a linear layer is fed with a small toy set of training examples that contain the correct part-of-speech (POS) tags for each word in the sentence. The used dictionary constists of only ten words: the, a, woman, dog, apple, book, reads, eats, green and good.
+A PyTorch implementation of a Neural Network is being used to learn word embeddings and predict part-of-speech (POS) tags for a small toy set of training examples. The network consists of an embedding layer and a linear layer.
 
-The Neural Neural network will learn two-dimensional word embeddings for each word, with the aim of predicting their POS tags correctly. Since the embedding uses only two dimensions (in a realistic setting, dimensionality would of course be significantly higher), they can easily be visualized in a standard x,y-graph.
+The training examples contain sentences where each word is associated with the correct POS tag. The dictionary used for training consists of only ten words: the, a, woman, dog, apple, book, reads, eats, green, and good.
 
-The coordinates of all words are initialiazed randomly. Using backpropagation, in each training iteration, the neural network alters the coordinates of each word slightly, trying to optimize their position in space, so that they are more suitable to predict the words' part-of-speech.  
+The goal of the network is to learn two-dimensional word embeddings for each word, allowing for easy visualization on an x,y-graph. Although in practical applications the dimensionality would be higher, for simplicity, only two dimensions are used here.
+
+Initially, the coordinates of all words are randomly initialized. Through backpropagation, in each training iteration, the neural network adjusts the coordinates of each word slightly. The aim is to optimize their positions in space so that they become more suitable for predicting the corresponding words' part-of-speech accurately.
 
 &nbsp;
 
 ### Visualizing the learning of word embeddings
 
-In the first example, you can see how ten words are randomly initialized in a 2-dimensional space and how the model then learns to optimize each word's embedding, so that words with the same POS tags are grouped closer together:
+In the first example, we start with ten words randomly initialized in a 2-dimensional space. Each word is represented by a coordinate in this space. As the model trains, it learns to optimize the word embeddings, adjusting their positions to improve the prediction of part-of-speech (POS) tags.
 
 <img src="videos/gif_no_background.gif" width="600"/>
 
