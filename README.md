@@ -2,13 +2,14 @@
 
 **This project visualizes how neural networks learn word embeddings.**
 
-A PyTorch implementation of a Neural Network is being used to learn word embeddings and predict part-of-speech (POS) tags for a small toy set of training examples. The network consists of an embedding layer and a linear layer.
+It uses a PyTorch implementation of a Neural Network to learn word embeddings and predict part-of-speech (POS) tags. The network consists of an embedding layer and a linear layer.
 
-The training examples contain sentences where each word is associated with the correct POS tag. The dictionary used for training consists of only ten words: the, a, woman, dog, apple, book, reads, eats, green, and good.
+The training examples contain sentences where each word is associated with the correct POS tag. The dictionary used for training consists of only ten words: the, a, woman, dog, apple, book, reads, eats, green, and good. The POS tags are noun, verb and adjective.
 
-The goal of the network is to learn two-dimensional word embeddings for each word, allowing for easy visualization on an x,y-graph. Although in practical applications the dimensionality would be higher, for simplicity, only two dimensions are used here.
+The goal of the network is to learn a two-dimensional word embedding for each word. In practical applications the dimensionality would of course be higher. Only two dimensions are used to allow easy visualization of the training process on an x/y graph.
 
-Initially, the coordinates of all words are randomly initialized. Through backpropagation, in each training iteration, the neural network adjusts the coordinates of each word slightly. The aim is to optimize their positions in space so that they become more suitable for predicting the corresponding words' part-of-speech accurately.
+Initially, the coordinates of all words are randomly initialized. Through backpropagation, in each training iteration, the neural network adjusts the coordinates of each word slightly. Its aim is to optimize the words'
+positions in space so that they become more suitable for predicting the part-of-speech accurately.
 
 &nbsp;
 
