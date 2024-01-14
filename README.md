@@ -4,7 +4,7 @@
 
 It uses a PyTorch implementation of a Neural Network to learn word embeddings and predict part-of-speech (POS) tags. The network consists of an embedding layer and a linear layer.
 
-The training examples contain sentences where each word is associated with the correct POS tag. The dictionary used for training consists of only ten words: the, a, woman, dog, apple, book, reads, eats, green, and good. The POS tags are noun, verb and adjective.
+The training examples contain sentences where each word is associated with the correct POS tag. The dictionary used for training consists of only ten words: the, a, woman, dog, apple, book, reads, eats, green, and good. The POS tags are determiner, noun, verb and adjective.
 
 The goal of the network is to learn a two-dimensional word embedding for each word. In practical applications the dimensionality would of course be higher. Only two dimensions are used to allow easy visualization of the training process on an x/y graph.
 
