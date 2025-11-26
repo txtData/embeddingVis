@@ -15,7 +15,7 @@ positions in space so that they become more suitable for predicting the part-of-
 
 ### Visualizing the learning of word embeddings
 
-In the first example, we start with ten words randomly initialized in a 2-dimensional space. Each word is represented by a coordinate in this space. As the model trains, it learns to optimize the word embeddings, adjusting their positions to improve the prediction of part-of-speech (POS) tags.
+We start with ten words that are randomly initialized in a 2-dimensional vector space. As the model learns, it step-by-step optimizes the word's coordinates (their embeddings), so that words with the same POS are located in the same area.
 
 <img src="videos/gif_no_background.gif" width="600"/>
 
@@ -23,7 +23,7 @@ In the first example, we start with ten words randomly initialized in a 2-dimens
 
 ### Visualizing the learning of prediction boundaries
 
-In this visualization, you can additionally see how the model learns to classify words into categories according to their POS tags:
+In this visualization, you can additionally see the prediction boundaries.
 
 <img src="videos/gif_1.gif" width="600"/>
 
@@ -31,7 +31,7 @@ In this visualization, you can additionally see how the model learns to classify
 
 ### Another run, with a very different outcome
 
-The last video example shows that--depending on different random initializations--different representations and classification boundaries are being learned:
+The last example shows that--depending on the random initializations--different representations and classification boundaries are learned:
 
 <img src="videos/gif_2.gif" width="600"/>
 
